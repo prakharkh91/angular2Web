@@ -13,8 +13,8 @@ var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
 var app_routing_1 = require('./app.routing');
 var navbar_component_1 = require('./components/navbar/navbar.component');
-var ng2_fullpage_1 = require('ng2-fullpage');
-var ng2_fullpage_2 = require('ng2-fullpage');
+//import { MnFullpageDirective } from 'ng2-fullpage';
+//import {MnFullpageService} from 'ng2-fullpage';
 var app_component_1 = require('./app.component');
 var resume_component_1 = require('./components/resume/resume.component');
 var about_component_1 = require('./components/about/about.component');
@@ -25,11 +25,9 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, http_1.HttpModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, resume_component_1.ResumeComponent, about_component_1.AboutComponent, home_component_1.HomeComponent, navbar_component_1.NavbarComponent,
-                ng2_fullpage_1.MnFullpageDirective
+            declarations: [app_component_1.AppComponent, resume_component_1.ResumeComponent, about_component_1.AboutComponent, home_component_1.HomeComponent, navbar_component_1.NavbarComponent
             ],
-            bootstrap: [app_component_1.AppComponent],
-            providers: [ng2_fullpage_2.MnFullpageService]
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
